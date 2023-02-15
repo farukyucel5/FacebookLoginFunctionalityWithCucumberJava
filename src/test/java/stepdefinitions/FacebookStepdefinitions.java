@@ -6,7 +6,6 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import pages.FacebookPage;
-import utilities.ConfigReader;
 import utilities.Driver;
 
 import java.time.Duration;
