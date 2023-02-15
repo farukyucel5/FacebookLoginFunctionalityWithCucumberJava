@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="72.14">
-    <testcase classname="Login functionality" name="correct username wrong password" time="17.176">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="105.889">
+    <testcase classname="Login functionality" name="correct username wrong password" time="46.434">
         <system-out>
             <![CDATA[Given navigate to the website...............................................passed
 And enter your username<"pekepex123@aosod.com">.............................passed
@@ -10,7 +10,7 @@ Then verify the error message...............................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login functionality" name="Wrong username right password" time="10.078">
+    <testcase classname="Login functionality" name="Wrong username right password" time="15.722">
         <system-out>
             <![CDATA[Given navigate to the website...............................................passed
 And enter your username<"far@gmail.com">....................................passed
@@ -20,7 +20,7 @@ Then verify the error message...............................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login functionality" name="What if username is not passed in?" time="26.036">
+    <testcase classname="Login functionality" name="What if username is not passed in?" time="11.265">
         <system-out>
             <![CDATA[Given navigate to the website...............................................passed
 And enter your username<"">.................................................passed
@@ -30,7 +30,7 @@ Then verify the error message...............................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login functionality" name="What if password is not passed in?" time="7.489">
+    <testcase classname="Login functionality" name="What if password is not passed in?" time="12.005">
         <system-out>
             <![CDATA[Given navigate to the website...............................................passed
 And enter your username<"pekepex123@aosod.com">.............................passed
@@ -40,7 +40,7 @@ Then verify the error message...............................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login functionality" name="For valid username and password" time="10.742">
+    <testcase classname="Login functionality" name="For valid username and password" time="18.999">
         <system-out>
             <![CDATA[Given navigate to the website...............................................passed
 And enter your username<"pekepex123@aosod.com">.............................passed
