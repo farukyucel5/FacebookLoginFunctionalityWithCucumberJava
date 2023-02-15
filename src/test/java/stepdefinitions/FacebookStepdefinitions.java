@@ -42,7 +42,6 @@ public class FacebookStepdefinitions {
     @Then("verify the error message")
     public void verifyTheErrorMessage() {
         Assert.assertTrue(qualitydemyPage.errorMesaage.isDisplayed());
-        System.out.println(qualitydemyPage.errorMesaage);
 
     }
 
