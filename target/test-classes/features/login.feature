@@ -11,7 +11,7 @@ Feature: Login functionality
     Then verify the error message
 
   Scenario: Wrong username right password
-    And enter your username<"far@gmail.com">
+    And enter your username<"far1@gmail.com">
     And enter the password<"Password1234">
     And click login button
     Then verify the error message

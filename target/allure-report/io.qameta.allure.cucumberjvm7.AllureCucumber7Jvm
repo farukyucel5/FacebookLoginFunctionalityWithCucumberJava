@@ -1,0 +1,73 @@
+
+@smoke
+Scenario: correct username wrong password         [90m# src/test/resources/features/login.feature:7[0m
+  [32mGiven [0m[32mnavigate to the website[0m                   [90m# stepdefinitions.FacebookStepdefinitions.navigateToTheWebsite()[0m
+  [32mAnd [0m[32menter your username<[0m[32m[1m"pekepex123@aosod.com"[0m[32m>[0m [90m# stepdefinitions.FacebookStepdefinitions.enterYourUsername(java.lang.String)[0m
+  [32mAnd [0m[32menter the password<[0m[32m[1m"123"[0m[32m>[0m                   [90m# stepdefinitions.FacebookStepdefinitions.enterThePassword(java.lang.String)[0m
+  [32mAnd [0m[32mclick login button[0m                          [90m# stepdefinitions.FacebookStepdefinitions.clickLoginButton()[0m
+  [32mThen [0m[32mverify the error message[0m                   [90m# stepdefinitions.FacebookStepdefinitions.verifyTheErrorMessage()[0m
+
+@smoke
+Scenario: Wrong username right password     [90m# src/test/resources/features/login.feature:13[0m
+  [32mGiven [0m[32mnavigate to the website[0m             [90m# stepdefinitions.FacebookStepdefinitions.navigateToTheWebsite()[0m
+  [32mAnd [0m[32menter your username<[0m[32m[1m"far1@gmail.com"[0m[32m>[0m [90m# stepdefinitions.FacebookStepdefinitions.enterYourUsername(java.lang.String)[0m
+  [32mAnd [0m[32menter the password<[0m[32m[1m"Password1234"[0m[32m>[0m    [90m# stepdefinitions.FacebookStepdefinitions.enterThePassword(java.lang.String)[0m
+  [32mAnd [0m[32mclick login button[0m                    [90m# stepdefinitions.FacebookStepdefinitions.clickLoginButton()[0m
+  [31mThen [0m[31mverify the error message[0m             [90m# stepdefinitions.FacebookStepdefinitions.verifyTheErrorMessage()[0m
+      [31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='_9ay7']"}
+  (Session info: chrome=110.0.5481.178)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d96b4991f9a61ef2a722ee2c450ac26a, findElement {using=xpath, value=//div[@class='_9ay7']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51389}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51389/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d96b4991f9a61ef2a722ee2c450ac26a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy21.isDisplayed(Unknown Source)
+	at stepdefinitions.FacebookStepdefinitions.verifyTheErrorMessage(FacebookStepdefinitions.java:44)
+	at ✽.verify the error message(file:///C:/Asoftware/FacebookLoginFunctionality/src/test/resources/features/login.feature:17)
+[0m
+
+    Embedding screenshots [image/png 40480 bytes]
+
+
+@smoke
+Scenario: What if username is not passed in? [90m# src/test/resources/features/login.feature:19[0m
+  [32mGiven [0m[32mnavigate to the website[0m              [90m# stepdefinitions.FacebookStepdefinitions.navigateToTheWebsite()[0m
+  [32mAnd [0m[32menter your username<[0m[32m[1m""[0m[32m>[0m                [90m# stepdefinitions.FacebookStepdefinitions.enterYourUsername(java.lang.String)[0m
+  [32mAnd [0m[32menter the password<[0m[32m[1m"Password1234"[0m[32m>[0m     [90m# stepdefinitions.FacebookStepdefinitions.enterThePassword(java.lang.String)[0m
+  [32mAnd [0m[32mclick login button[0m                     [90m# stepdefinitions.FacebookStepdefinitions.clickLoginButton()[0m
+  [32mThen [0m[32mverify the error message[0m              [90m# stepdefinitions.FacebookStepdefinitions.verifyTheErrorMessage()[0m
+
+@smoke
+Scenario: What if password is not passed in?      [90m# src/test/resources/features/login.feature:25[0m
+  [32mGiven [0m[32mnavigate to the website[0m                   [90m# stepdefinitions.FacebookStepdefinitions.navigateToTheWebsite()[0m
+  [32mAnd [0m[32menter your username<[0m[32m[1m"pekepex123@aosod.com"[0m[32m>[0m [90m# stepdefinitions.FacebookStepdefinitions.enterYourUsername(java.lang.String)[0m
+  [32mAnd [0m[32menter the password<[0m[32m[1m""[0m[32m>[0m                      [90m# stepdefinitions.FacebookStepdefinitions.enterThePassword(java.lang.String)[0m
+  [32mAnd [0m[32mclick login button[0m                          [90m# stepdefinitions.FacebookStepdefinitions.clickLoginButton()[0m
+  [32mThen [0m[32mverify the error message[0m                   [90m# stepdefinitions.FacebookStepdefinitions.verifyTheErrorMessage()[0m
+
+@smoke
+Scenario: For valid username and password         [90m# src/test/resources/features/login.feature:31[0m
+  [32mGiven [0m[32mnavigate to the website[0m                   [90m# stepdefinitions.FacebookStepdefinitions.navigateToTheWebsite()[0m
+  [32mAnd [0m[32menter your username<[0m[32m[1m"pekepex123@aosod.com"[0m[32m>[0m [90m# stepdefinitions.FacebookStepdefinitions.enterYourUsername(java.lang.String)[0m
+  [32mAnd [0m[32menter the password<[0m[32m[1m"Password1234"[0m[32m>[0m          [90m# stepdefinitions.FacebookStepdefinitions.enterThePassword(java.lang.String)[0m
+  [32mAnd [0m[32mclick login button[0m                          [90m# stepdefinitions.FacebookStepdefinitions.clickLoginButton()[0m
+  [32mThen [0m[32mverify the user has logged in successfully[0m [90m# stepdefinitions.FacebookStepdefinitions.verifyTheUserHasLoggedInSuccessfully()[0m
