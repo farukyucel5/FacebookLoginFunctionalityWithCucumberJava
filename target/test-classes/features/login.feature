@@ -9,7 +9,6 @@ Feature: Login functionality
     And enter the password<"123">
     And click login button
     Then verify the error message
-
   Scenario: Wrong username right password
     And enter your username<"far1@gmail.com">
     And enter the password<"Password1234">
